@@ -19,6 +19,20 @@
     "qulto"
   ],
   "license": "MIT",
+  "ignore": [
+    "node_modules/",
+    "examples/",
+    "test/",
+    "Gruntfile.js",
+    "karma.conf.js",
+    "package.json",
+    ".travis.yml",
+    ".jshintrc",
+    ".gitignore",
+    ".editorconfig",
+    ".bowerrc",
+    ".coveralls.yml"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/monguzltd/angular-summernote-help.git"
