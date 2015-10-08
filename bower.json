@@ -38,7 +38,7 @@
     "url": "git://github.com/monguzltd/angular-summernote-help.git"
   },
    "dependencies": {
-    "summernote": "~0.6.4",
+    "summernote-help": "~1.0.0",
     "angular": "~1.4.0"
   },
   "devDependencies": {
