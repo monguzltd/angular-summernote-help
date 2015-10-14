@@ -39,6 +39,12 @@ angular.module('summernote', [])
           $scope.imageSearch({files:files, editable: $scope.editable});
         };
       }
+    
+    if (angular.isDefined($attrs.onDocSearch)) {
+        summernoteConfig.onDocSearch = function(files) {
+          $scope.docSearch({files:files, editable: $scope.editable});
+        };
+      }
     this.activate = function(scope, element, ngModel) {
       var updateNgModel = function() {
         var newValue = element.code();
@@ -140,7 +146,8 @@ angular.module('summernote', [])
         change: '&onChange',
         toolbarClick: '&onToolbarClick',
         imageUpload: '&onImageUpload',
-        imageSearch: '&onImageSearch'
+        imageSearch: '&onImageSearch',
+        docSearch: '&onDocSearch'
       },
       template: '<div class="summernote"></div>',
       link: function(scope, element, attrs, ctrls) {
