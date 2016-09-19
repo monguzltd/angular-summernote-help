@@ -35,14 +35,14 @@ angular.module('summernote', [])
     }
     
     if (angular.isDefined($attrs.onImageSearch)) {
-        summernoteConfig.onImageSearch = function(files) {
-          $scope.imageSearch({files:files, editable: $scope.editable});
+        summernoteConfig.onImageSearch = function() {
+          $scope.imageSearch({editable: $scope.editable});
         };
       }
     
     if (angular.isDefined($attrs.onDocSearch)) {
-        summernoteConfig.onDocSearch = function(files) {
-          $scope.docSearch({files:files, editable: $scope.editable});
+        summernoteConfig.onDocSearch = function() {
+          $scope.docSearch({editable: $scope.editable});
         };
       }
     this.activate = function(scope, element, ngModel) {
